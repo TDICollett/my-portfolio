@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/TDICollett/my-portfolio.git/static/css/main.9b95e7c8.css",
+    "main.js": "/TDICollett/my-portfolio.git/static/js/main.1b85807c.js",
+    "static/js/453.acca0757.chunk.js": "/TDICollett/my-portfolio.git/static/js/453.acca0757.chunk.js",
+    "static/media/storm.gif": "/TDICollett/my-portfolio.git/static/media/storm.3b88ed0f4caa8f71970c.gif",
+    "static/media/coffee.gif": "/TDICollett/my-portfolio.git/static/media/coffee.7a7331ac43556906b052.gif",
+    "static/media/bird.gif": "/TDICollett/my-portfolio.git/static/media/bird.f2b618bfd21d4faad570.gif",
+    "static/media/Gif2.gif": "/TDICollett/my-portfolio.git/static/media/Gif2.643869a8a257ff4abacd.gif",
+    "static/media/Gif1.gif": "/TDICollett/my-portfolio.git/static/media/Gif1.aeae038b46f9ed14f30c.gif",
+    "static/media/Introimage.PNG": "/TDICollett/my-portfolio.git/static/media/Introimage.7c7395b295518e933b7d.PNG",
+    "index.html": "/TDICollett/my-portfolio.git/index.html",
+    "main.9b95e7c8.css.map": "/TDICollett/my-portfolio.git/static/css/main.9b95e7c8.css.map",
+    "main.1b85807c.js.map": "/TDICollett/my-portfolio.git/static/js/main.1b85807c.js.map",
+    "453.acca0757.chunk.js.map": "/TDICollett/my-portfolio.git/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b95e7c8.css",
+    "static/js/main.1b85807c.js"
+  ]
+}
