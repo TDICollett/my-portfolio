@@ -21,7 +21,7 @@
 
 .projects-container {
   display: flex;
-  flex-direction: column; /* Stack GIFs and thumbnails vertically */
+  flex-direction: column; 
   align-items: center;
   gap: 20px;
   width: 100%;
@@ -85,19 +85,19 @@
   }
 
   .project-gif {
-    width: 80px; /* Adjust GIF size */
+    width: 80px; 
     margin-bottom: 10px;
   }
 
   .thumbnails-container {
-    flex-direction: column; /* Stack thumbnails vertically */
+    flex-direction: column; 
     gap: 10px;
   }
 
   .project-frame {
-    width: 100%; /* Make frames responsive */
+    width: 100%; 
     max-width: 300px;
-    height: auto; /* Adjust height automatically */
+    height: auto; 
   }
 }
 
@@ -113,7 +113,7 @@
   }
 
   .project-gif {
-    width: 60px; /* Further adjust GIF size for small screens */
+    width: 60px; 
     margin-bottom: 10px;
   }
 

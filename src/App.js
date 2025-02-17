@@ -18,12 +18,12 @@ function App() {
       let targetSection = null;
 
       if (e.deltaY > 0) {
-        // Scrolling down
+        
         targetSection = [...sections].find(
           (section) => section.offsetTop > currentScroll
         );
       } else if (e.deltaY < 0) {
-        // Scrolling up
+        
         targetSection = [...sections]
           .reverse()
           .find((section) => section.offsetTop < currentScroll);
@@ -37,10 +37,10 @@ function App() {
       }
     };
 
-    // Attach the scroll event listener
+    
     window.addEventListener("wheel", handleScroll, { passive: false });
 
-    // Cleanup the listener on component unmount
+    
     return () => {
       window.removeEventListener("wheel", handleScroll);
     };

@@ -59,13 +59,13 @@
 
 .extended {
   display: flex;
-  flex-direction: column-reverse; /* Reverse order to make new icons appear above */
+  flex-direction: column-reverse; 
   gap: 10px;
 }
 
 .extended-icons {
   display: none;
-  flex-direction: column-reverse; /* Reverse the order for new icons */
+  flex-direction: column-reverse; 
   gap: 10px;
 }
 

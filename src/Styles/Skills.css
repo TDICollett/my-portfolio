@@ -121,7 +121,6 @@
     width: 150px;
   }
 
-  /* Hide the GIFs on small screens */
   .gif-top-left, .gif-top-right {
     display: none;
   }
@@ -164,7 +163,7 @@
 
 @media (max-width: 1365px) and (max-height: 953px) {
   .gif-top-left, .gif-top-right {
-    display: none;  /* Hide the GIFs when the viewport is smaller or equal to 1365px x 953px */
+    display: none;  
   }
 }
 

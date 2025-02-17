@@ -1,7 +1,7 @@
 import React from "react";
-import { TypeAnimation } from 'react-type-animation'; // Import TypeAnimation
+import { TypeAnimation } from 'react-type-animation'; 
 import "../Styles/Introduction.css";
-import Pic from "../Images/Introimage.PNG";  // Adjust the relative path if needed
+import Pic from "../Images/Introimage.PNG"; 
 
 function Introduction() {
   return (

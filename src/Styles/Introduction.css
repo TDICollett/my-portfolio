@@ -3,8 +3,8 @@
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: center; /* Vertically center content */
-  padding: 0 50px; /* Add horizontal padding */
+  align-items: center; 
+  padding: 0 50px; 
 }
 
 .svg-background {
@@ -22,8 +22,8 @@
 
 .content {
   z-index: 1;
-  text-align: left; /* Ensure text aligns left */
-  margin-left: 0; /* Prevent auto-centering */
+  text-align: left; 
+  margin-left: 0; 
   max-width: 600px;
   position: relative;
 }
@@ -61,62 +61,62 @@
 /* Responsive styles for tablets and smaller devices */
 @media (max-width: 768px) {
   .introduction {
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     padding: 20px;
   }
 
   .content {
-    text-align: center; /* Center-align text */
-    margin: 0 auto; /* Ensure text appears first */
+    text-align: center; 
+    margin: 0 auto; 
   }
 
   .image-box {
-    position: relative; /* Reset positioning */
-    max-width: 60%; /* Resize image */
+    position: relative; 
+    max-width: 60%; 
     height: auto;
-    margin: 20px auto; /* Center below the text */
-    order: 2; /* Ensure image comes after text */
-    transform: none; /* Reset transform */
+    margin: 20px auto; 
+    order: 2; 
+    transform: none; 
   }
 }
 
 /* For mobile screens */
 @media (max-width: 480px) {
   .image-box {
-    max-width: 80%; /* Further reduce image size */
+    max-width: 80%; 
   }
 
   .introduction p {
-    text-align: center; /* Center-align text */
-    margin-bottom: 20px; /* Add spacing below text */
+    text-align: center; 
+    margin-bottom: 20px; 
   }
 }
 
 /* Default font size */
 body {
-  font-size: 1rem;  /* Default font size for larger screens */
+  font-size: 1rem;  
 }
 
 /* Reduce font size for all elements in smaller viewports */
 @media (max-width: 768px) {
   body {
-    font-size: 0.875rem; /* Reduce font size slightly */
+    font-size: 0.875rem; 
   }
 
   .projects-heading {
-    font-size: 2.5rem; /* Adjust the heading font size */
+    font-size: 2.5rem; 
   }
 }
 
 @media (max-width: 480px) {
   body {
-    font-size: 0.75rem; /* Further reduce font size */
+    font-size: 0.75rem; 
   }
 
   .projects-heading {
-    font-size: 2rem; /* Further adjust heading font size */
+    font-size: 2rem; 
   }
 }
 

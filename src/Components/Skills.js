@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../Styles/Skills.css";
-import gifTopLeft from "../Images/Gif1.gif"; // Replace with your actual file name
-import gifTopRight from "../Images/Gif2.gif"; // Replace with your actual file name
+import gifTopLeft from "../Images/Gif1.gif"; 
+import gifTopRight from "../Images/Gif2.gif"; 
 
 function Skills() {
   const [inView, setInView] = useState(false);
@@ -18,7 +18,6 @@ function Skills() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // If the section is in the viewport, set inView to true
           setInView(entry.isIntersecting);
         });
       },

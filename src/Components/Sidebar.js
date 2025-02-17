@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "../Styles/Sidebar.css";
-import { FaUser, FaProjectDiagram, FaEnvelope } from "react-icons/fa";  // Import FaEnvelope for email
+import { FaUser, FaProjectDiagram, FaEnvelope } from "react-icons/fa";  
 import { BsJournalCode, BsLinkedin } from "react-icons/bs";
-import { GrContact } from "react-icons/gr";  // Import the GrContact icon for the main toggle
+import { GrContact } from "react-icons/gr";  
 
 function Sidebar() {
   const [isExtended, setIsExtended] = useState(false);
 
   // Function to copy email to clipboard
   const copyEmailToClipboard = () => {
-    const email = "your-email@example.com"; // Replace with your email
+    const email = "tdicollett@gmail.com"; 
     navigator.clipboard.writeText(email).then(() => {
       alert("Email copied to clipboard!");
     }).catch(err => {
@@ -19,7 +19,7 @@ function Sidebar() {
 
   // Function to open LinkedIn
   const goToLinkedIn = () => {
-    window.location.href = "https://www.linkedin.com/in/tristan-collett-4904ba293"; // Replace with your LinkedIn URL
+    window.location.href = "https://www.linkedin.com/in/tristan-collett-4904ba293"; 
   };
 
   return (
