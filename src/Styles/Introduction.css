@@ -1,0 +1,123 @@
+/* Default styles for larger screens */
+.introduction {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center; /* Vertically center content */
+  padding: 0 50px; /* Add horizontal padding */
+}
+
+.svg-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  background-color: #656768;
+  background-image: linear-gradient(to bottom, rgba(23, 23, 24, 0.86), #09141d);
+  z-index: -1;
+}
+
+.content {
+  z-index: 1;
+  text-align: left; /* Ensure text aligns left */
+  margin-left: 0; /* Prevent auto-centering */
+  max-width: 600px;
+  position: relative;
+}
+
+.introduction h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+.introduction p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.6;
+  font-style: italic;
+  text-align: left;
+  color: white;
+}
+
+/* Image styles for larger screens */
+.image-box {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  height: 40%;
+  border-radius: 50%;
+  border: 5px solid rgb(48, 48, 75);
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
+  .introduction {
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .content {
+    text-align: center; /* Center-align text */
+    margin: 0 auto; /* Ensure text appears first */
+  }
+
+  .image-box {
+    position: relative; /* Reset positioning */
+    max-width: 60%; /* Resize image */
+    height: auto;
+    margin: 20px auto; /* Center below the text */
+    order: 2; /* Ensure image comes after text */
+    transform: none; /* Reset transform */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .image-box {
+    max-width: 80%; /* Further reduce image size */
+  }
+
+  .introduction p {
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Add spacing below text */
+  }
+}
+
+/* Default font size */
+body {
+  font-size: 1rem;  /* Default font size for larger screens */
+}
+
+/* Reduce font size for all elements in smaller viewports */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.875rem; /* Reduce font size slightly */
+  }
+
+  .projects-heading {
+    font-size: 2.5rem; /* Adjust the heading font size */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.75rem; /* Further reduce font size */
+  }
+
+  .projects-heading {
+    font-size: 2rem; /* Further adjust heading font size */
+  }
+}
+
+

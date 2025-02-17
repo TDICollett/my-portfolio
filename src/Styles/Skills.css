@@ -1,0 +1,170 @@
+.skills {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 20px;
+  padding-bottom: 100px;
+  background-color: white;
+}
+
+.skills h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10%;
+  font-size: 4rem;
+  color: #121212;
+}
+
+.skills-description-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 10%;
+  position: relative;
+}
+
+.gif-top-left, .gif-top-right {
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  height: auto;
+}
+
+.gif-top-left {
+  left: -50%;
+}
+
+.gif-top-right {
+  right: -50%;
+}
+
+.skills-description {
+  text-align: center;
+  font-size: 18px;
+  color: #121212;
+  max-width: 600px;
+  width: 100%;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.progress-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.circular-progress {
+  transform: rotate(-90deg);
+  stroke-linecap: round;
+  stroke-width: 12;
+}
+
+.circle-bg {
+  stroke: #f1f1f1;
+  stroke-width: 12;
+}
+
+.circle-progress {
+  transition: stroke-dashoffset 2s ease-out;
+  stroke-linecap: round;
+  stroke-width: 12;
+}
+
+.language-label {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+}
+
+.percentage-text {
+  position: absolute;
+  top: 43%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Hide GIFs when the viewport is below 768px */
+@media (max-width: 768px) {
+  .skills-container {
+    width: 90%;
+  }
+
+  .circular-progress {
+    width: 120px;
+    height: 120px;
+  }
+
+  .gif-top-left, .gif-top-right {
+    width: 150px;
+  }
+
+  /* Hide the GIFs on small screens */
+  .gif-top-left, .gif-top-right {
+    display: none;
+  }
+}
+
+/* Hide GIFs when the viewport is below 480px */
+@media (max-width: 480px) {
+  .skills-container {
+    width: 100%;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .progress-bar-wrapper {
+    width: 80px;
+  }
+
+  .circular-progress {
+    width: 80px;
+    height: 80px;
+  }
+
+  .percentage-text {
+    font-size: 14px;
+  }
+
+  .language-label {
+    font-size: 12px;
+  }
+
+  .gif-top-left, .gif-top-right {
+    width: 120px;
+  }
+
+  /* Hide the GIFs on very small screens */
+  .gif-top-left, .gif-top-right {
+    display: none;
+  }
+}
+
+@media (max-width: 1365px) and (max-height: 953px) {
+  .gif-top-left, .gif-top-right {
+    display: none;  /* Hide the GIFs when the viewport is smaller or equal to 1365px x 953px */
+  }
+}
+

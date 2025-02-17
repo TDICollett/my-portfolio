@@ -1,0 +1,87 @@
+.sidebar {
+  width: 90px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 80px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar a:hover {
+  color: #00bcd4;
+}
+
+/* Bottom Section for Email and LinkedIn */
+.bottom-section {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.toggle-button:hover {
+  color: #00bcd4;
+}
+
+.extended {
+  display: flex;
+  flex-direction: column-reverse; /* Reverse order to make new icons appear above */
+  gap: 10px;
+}
+
+.extended-icons {
+  display: none;
+  flex-direction: column-reverse; /* Reverse the order for new icons */
+  gap: 10px;
+}
+
+.extended .extended-icons {
+  display: flex;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon-btn:hover {
+  color: #00bcd4;
+}

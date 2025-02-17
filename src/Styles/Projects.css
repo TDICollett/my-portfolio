@@ -1,0 +1,130 @@
+.projects {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #292929;
+}
+
+.projects-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15%;
+  margin-top: -5%;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column; /* Stack GIFs and thumbnails vertically */
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.gifs-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.project-gif {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.thumbnails-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  max-width: 800px;
+}
+
+.project-frame {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #666;
+}
+
+.project-frame:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .projects-heading {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+  .gifs-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .project-gif {
+    width: 80px; /* Adjust GIF size */
+    margin-bottom: 10px;
+  }
+
+  .thumbnails-container {
+    flex-direction: column; /* Stack thumbnails vertically */
+    gap: 10px;
+  }
+
+  .project-frame {
+    width: 100%; /* Make frames responsive */
+    max-width: 300px;
+    height: auto; /* Adjust height automatically */
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-heading {
+    font-size: 2rem;
+  }
+
+  .gifs-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .project-gif {
+    width: 60px; /* Further adjust GIF size for small screens */
+    margin-bottom: 10px;
+  }
+
+  .thumbnails-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-frame {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+}
